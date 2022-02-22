@@ -23,7 +23,7 @@
     </div>
     <div v-else>
       <div class="alert alert-success" role="alert">
-        Save customer successfully!
+        Saved customer successfully.
       </div>
       <button @click="newCustomer" class="btn btn-primary">Add new customer</button>
     </div>
@@ -49,7 +49,7 @@ export default {
   },
   methods: {
     saveCustomer() {
-      var data = {
+      let data = {
         firstName: this.customer.firstName,
         lastName: this.customer.lastName,
         email: this.customer.email,
